@@ -84,7 +84,6 @@ def time_stats(df):
 
     # TO DO: display the most common month
 
-
     common_month= df['month'].mode()[0]
 
     print('The most common month is:', common_month)
@@ -102,6 +101,7 @@ def time_stats(df):
     print('Most Popular Start Hour:', popular_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -126,6 +126,7 @@ def station_stats(df):
     print('The most frequent combination of start station and end station trip is:', Frequent_trip)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -154,6 +155,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -195,6 +197,7 @@ def user_stats(df):
        print('Birth year stats cannot be calculated because Birth Year does not appear in the dataframe')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+    
     print('-'*40)
 
 def display_data(df):
