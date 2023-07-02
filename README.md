@@ -20,8 +20,11 @@ The purpose of this project was to makje an interactive experience where users c
 8. the last thing the code will do is ask the user if they would like to restart or not
 
 ### Files used
-Include the files used
+Chicago.csv
+new_york_city.csv
+washington.csv
+Bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity- Thank you for guiding me through the process and teaching me hwo to use both python and git
 
