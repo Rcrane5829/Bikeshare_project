@@ -23,7 +23,7 @@ def get_filters():
             break
         else:
             print("Invalid input. Please enter a valid city name.")
-   
+
     while True:
         month=input("Enter the name of a month (All, January, February, March, April, May, June ):").title()
         if month in ['All', 'January', 'February','March','April','May','June']:
@@ -82,7 +82,9 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # display the most common month
+    # TO DO: display the most common month
+
+
     common_month= df['month'].mode()[0]
 
     print('The most common month is:', common_month)
@@ -100,6 +102,7 @@ def time_stats(df):
     print('Most Popular Start Hour:', popular_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -124,6 +127,7 @@ def station_stats(df):
     print('The most frequent combination of start station and end station trip is:', Frequent_trip)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -152,6 +156,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -193,6 +198,7 @@ def user_stats(df):
        print('Birth year stats cannot be calculated because Birth Year does not appear in the dataframe')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+    
     print('-'*40)
 
 def display_data(df):
